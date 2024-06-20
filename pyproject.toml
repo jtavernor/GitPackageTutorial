@@ -2,10 +2,11 @@
 name = "GitTutorial"
 version = "1.0.0"
 description = "Tutorial for how to use github as pip packages"
-dependencies = [
-    "numpy>=2.0.0"
-]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
 
 [build-system]
-build-backend = "flit_core.buildapi"
-requires = ["flit_core >=3.2,<4"]
+requires = ["setuptools>=62.6.0"]
+build-backend = "setuptools.build_meta:__legacy__"

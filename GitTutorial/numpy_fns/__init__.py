@@ -1,0 +1,1 @@
+from .simple_method import my_func
