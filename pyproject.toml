@@ -2,6 +2,9 @@
 name = "GitTutorial"
 version = "1.0.0"
 description = "Tutorial for how to use github as pip packages"
+dependencies = [
+    "numpy>=2.0.0"
+]
 
 [build-system]
 build-backend = "flit_core.buildapi"
