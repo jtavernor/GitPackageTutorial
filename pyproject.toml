@@ -1,0 +1,8 @@
+[project]
+name = "GitTutorial"
+version = "1.0.0"
+description = "Tutorial for how to use github as pip packages"
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
